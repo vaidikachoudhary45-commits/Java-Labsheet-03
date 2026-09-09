@@ -1,0 +1,27 @@
+class Q28 {
+    public static void main(String[] args) {
+
+        int[][] a = {
+            {10, 20, 30},
+            {40, 50, 60},
+            {70, 80, 90}
+        };
+
+        int search = 60;
+        boolean found = false;
+
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+
+                if (a[i][j] == search) {
+                    System.out.println("Element found at row "
+                            + (i + 1) + ", column " + (j + 1));
+                    found = true;
+                }
+            }
+        }
+
+        if (!found)
+            System.out.println("Element not found.");
+    }
+}
